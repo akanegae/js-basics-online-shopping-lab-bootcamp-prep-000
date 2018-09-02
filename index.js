@@ -9,22 +9,39 @@ function setCart(c) {
   return cart;
 }
 
+//1
 function addToCart(item) {
- // write your code here
+  var price = Math.floor(Math.random() *  100) + 1;
+  cart.push(new Object({[item]: price}));
+  console.log(`${item} has been added to your cart.`);
+  return cart;
 }
 
+//2
 function viewCart() {
-  // write your code here
+  if (cart.length === 0);
+  console.log("Your shopping cart is empty.");
+}
+else {
+  for (let i = 0; i < cart.length; i++) {
+    cart.forEach(function(value, index) {
+    console.log(`In your cart, you have ${value} at ${index}.`);
+  });
+  }
 }
 
+//3
 function total() {
-  // write your code here
+  let t = 0;
+  return t;
 }
 
+//4
 function removeFromCart(item) {
-  // write your code here
-}
-
-function placeOrder(cardNumber) {
-  // write your code here
+  for (let i = cart.length; i >=0; i--) {
+    if (cart.length[i] >= 0) {
+      cart.splice(i, 1);
+    }
+    return cart;
+  }
 }
