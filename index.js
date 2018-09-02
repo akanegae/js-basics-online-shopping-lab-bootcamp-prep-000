@@ -40,10 +40,10 @@ function total() {
 
 //4
 function removeFromCart(item){
-   for(var i = 0, l = cart.length; i < l; i++){
-   for(var list in cart[i]){
-      if(item === list){
-        cart.splice(i,1)
+   for(var i = 0, i < cart.length; i++) {
+   for(var list in cart[i]) {
+      if (item === list) {
+        cart.splice(i, 1)
         return cart
        }
     }
