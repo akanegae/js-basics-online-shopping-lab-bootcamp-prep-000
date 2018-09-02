@@ -20,7 +20,7 @@ function addToCart(item){
 //2
 function viewCart() {
   if (cart.length === 0) {
-    console.log("Your shopping cart is empty.")
+    console.log("Your shopping cart is empty.");
   } else {
     var items = [];
     for (var i = 0; i < cart.length; i++) {
@@ -47,11 +47,15 @@ function removeFromCart(item) {
     return cart;
     }
   }
+  if (!item === list) {
+    console.log("That item is not in your cart.");
+    return cart;
+  }
 }
 
 //5
 function placeOrder(cardNumber) {
-  if (cardNumber === undefined) {
+  if (!cardNumber) {
     console.log("Sorry, we don't have a credit card on file for you.");
   } else {
     console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`);
