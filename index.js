@@ -22,13 +22,13 @@ function viewCart() {
   if (cart.length === 0);
   console.log("Your shopping cart is empty.");
 } else {
-  var itemsPrices = [];
+  var items = [];
   for (let i = 0; i < cart.length; i++) {
-    for(var foods in cart[i]){
-      itemsPrices.push(foods + " at $" + cart[i][foods]);
+    for(var item in cart[i]){
+      items.push(item + " at $" + cart[i][item]);
     }
   }
-  console.log("In your cart, you have" + itemsPrices.join(", ") + ".");
+  console.log("In your cart, you have" + items.join(", ") + ".");
 }
 
 //3
