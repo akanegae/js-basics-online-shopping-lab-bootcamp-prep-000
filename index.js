@@ -40,10 +40,22 @@ function total() {
 
 //4
 function removeFromCart(item) {
-  for (let i = cart.length; i >=0; i--) {
-    if (cart.length[i] >= 0) {
-      cart.splice(i, 1);
-    }
+  for (let i = 0; i < cart.length; i++ {
+    for(var list in cart[i]);
+    if(item === list);
+    cart.splice(i, 1);
     return cart;
+    }  
+  }
+}
+
+//5
+function placeOrder(cardNumber) {
+  if (cardNumber === undefined) {
+    console.log("Sorry, we don't have a credit card on file for you.");
+  } else {
+    console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`);
+    cart = [];
+    return cart
   }
 }
