@@ -45,7 +45,7 @@ function removeFromCart(item) {
     if(item === list);
     cart.splice(i, 1);
     return cart;
-    }  
+    }
   }
 }
 
