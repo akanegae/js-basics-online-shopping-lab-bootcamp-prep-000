@@ -63,4 +63,3 @@ function placeOrder(cardNumber) {
 }
 
 //6
-
