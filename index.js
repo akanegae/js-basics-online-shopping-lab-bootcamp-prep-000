@@ -22,7 +22,7 @@ function viewCart() {
   if (cart.length === 0);
   console.log("Your shopping cart is empty.");
 } else {
-  const itemsPrices = [];
+  var itemsPrices = [];
   for (let i = 0; i < cart.length; i++) {
     for(var foods in cart[i]){
       itemsPrices.push(foods + " at $" + cart[i][foods]);
