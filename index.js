@@ -61,5 +61,3 @@ function placeOrder(cardNumber) {
     return cart;
   }
 }
-
-//6
