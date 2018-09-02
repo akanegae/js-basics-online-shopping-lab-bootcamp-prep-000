@@ -21,13 +21,14 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0);
   console.log("Your shopping cart is empty.");
-}
-else {
+} else {
+  const itemsPrices = [];
   for (let i = 0; i < cart.length; i++) {
-    cart.forEach(function(value, index) {
-    console.log(`In your cart, you have ${value} at ${index}.`);
-  });
+    for(var foods in cart[i]){
+      itemsPrices.push(foods + " at $" + cart[i][foods]);
+    }
   }
+  console.log("In your cart, you have" + itemsPrices.join(", ") + ".");
 }
 
 //3
